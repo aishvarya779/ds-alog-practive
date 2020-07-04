@@ -2,8 +2,7 @@ const binarySearch = (arr, key) => {
   let left = 0;
   let right = arr.length - 1;
   console.log(key);
-  let reult = searchAlgo(arr, left, right, key);
-  return reult;
+  return searchAlgo(arr, left, right, key);
 };
 
 const searchAlgo = (arr, l, r, key) => {
