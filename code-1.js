@@ -6,5 +6,11 @@ Given an array, , of  integers, print each element in reverse order as a single 
 */
 
 const reverseOrder = arr => {
+  let result = '';
   console.log(arr);
+  for (let end = arr.length - 1; end > -1; end--) {
+    result += arr[end] + ' ';
+  }
+  console.log(result);
 };
+reverseOrder([1, 2, 3, 4, 5, 6]);
