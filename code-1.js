@@ -4,3 +4,7 @@ In an array, , of size , each memory location has some unique index,  (where ), 
  (you may also see it written as ).
 Given an array, , of  integers, print each element in reverse order as a single line of space-separated integers.
 */
+
+const reverseOrder = arr => {
+  console.log(arr);
+};
