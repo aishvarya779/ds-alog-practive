@@ -46,3 +46,7 @@ class Linkedlist {
     return prev;
   }
 }
+module.exports = {
+  Node,
+  Linkedlist
+};
