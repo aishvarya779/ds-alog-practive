@@ -47,3 +47,22 @@ const getLinkedListLength = list => {
 };
 
 console.log(interSectionNode(list, list2));
+
+// method 2nd for intersection;
+
+const listInterSection = (list1, list2) => {
+  let intersectNode;
+  list1 = list1.head;
+  list2 = list2.head;
+  while (list1.next && list2.next) {
+    if (list1.value === list2.value) {
+      intersectNode = list1;
+    }
+    list1 = list1.next;
+    list2 = list2.next;
+  }
+
+  return intersectNode;
+};
+
+console.log('Second', listInterSection(list, list2));
