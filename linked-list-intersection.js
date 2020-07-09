@@ -38,7 +38,6 @@ const listInterSection = (list1, list2) => {
 };
 
 const interSectionMethodThird = (list1, list2) => {
-  let intersectNode;
   let m = getLinkedListLength(list1.head);
   let n = getLinkedListLength(list2.head);
   let greaterList = m > n ? list1.head : list2.head;
@@ -47,7 +46,6 @@ const interSectionMethodThird = (list1, list2) => {
   for (let start = 0; start < difference; start++) {
     greaterList = greaterList.next;
   }
-  console.log('greaterList', greaterList);
   return listInterSection(greaterList, smallerList);
 };
 console.log('Result', interSectionMethodThird(list, list2));
